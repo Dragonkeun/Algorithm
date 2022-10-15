@@ -34,3 +34,18 @@ for i in range(len(integer)): # 0~4, 5번 반복
 # 26. 입력되는 시:분:초 에서 분만 출력해보자.
 h, m, s = input().split(':')
 print(m)
+
+# 27. 년월일을 출력하는 방법은 나라마다, 형식마다 조금씩 다르다.
+# 년월일(yyyy.mm.dd)를 입력받아,
+# 일월년(dd-mm-yyyy)로 출력해보자.
+# (단, 한 자리 일/월은 0을 붙여 두자리로 출력한다.)
+# Tip::조건문 if-else문을 파이썬의 3항 연산자(Chapter 10 참고) 기능을 이용하면 더 간단하게 작성할 수 있다.
+# 이렇게 작성하는 것이 메모리 효율성면에서도 효과적이다. (18번 참고)
+y, m, d = input().split('.')
+# if len(m) == 1:
+#     m = '0'+m
+# if len(d) == 1:
+#     d = '0'+ d
+m = '0'+m if len(m) == 1 else m # (true value) if (조건) (false value), m의 길이가 1이면 m = '0'+m, 거짓이면 m
+d = '0'+d if len(d) == 1 else d
+print('{}-{}-{}'.format(d, m, y))
