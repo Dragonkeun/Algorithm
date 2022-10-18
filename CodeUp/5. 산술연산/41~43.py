@@ -11,3 +11,7 @@ print(chr(a))
 # 산술 연산자 '//'는 나눈 후의 몫만 (반환한다. ex) 1/3 >> 0
 a, b = map(int, input().split())
 print(a//b)
+
+# 43. 정수 2개(a, b) 를 입력받아 a를 b로 나눈 나머지를 출력해보자.
+a, b = map(int, input().split())
+print(a%b)
