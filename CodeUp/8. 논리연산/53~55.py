@@ -22,3 +22,9 @@ a, b = map(int, input().split())
 if a or b :
     print("참")
 
+# Bonus. 1개의 정수형 입력이 들어오면 논리 연산을 이용하여 '홀수'와 '짝수'를 판별하여라
+n = int(input())
+if n % 2 == 0:
+    print("짝수")
+elif n % 2 == 1:
+    print("홀수")
