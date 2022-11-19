@@ -8,3 +8,7 @@ print(a>b and a or b)
 a, b, c = map(int, input().split())
 big = a if a < b else b
 print(big if big < c else c)
+
+# Bonus. 1개의 정수형 입력이 들어오면 삼항 연산을 이용하여 '홀수'와 '짝수'를 판별하여라
+a = int(input())
+print("짝수" if a % 2 == 0 else "홀수")
