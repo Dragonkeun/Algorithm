@@ -9,3 +9,5 @@ def solution(dot):
     elif dot[0] > 0 and dot[1] < 0:
         answer = 4
     return answer
+
+# 최댓값 만들기 (1)
