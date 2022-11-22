@@ -10,4 +10,3 @@ def solution(dot):
         answer = 4
     return answer
 
-# 최댓값 만들기 (1)
